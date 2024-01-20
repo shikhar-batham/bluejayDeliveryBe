@@ -1,0 +1,19 @@
+.....................................................................................
+There is no employee who have worked for seven consecutive days.
+.....................................................................................
+
+
+Employee Name, Employee position  who have shift gap greater than 1 and less than 10
+.....................................................................................
+DeXgadiXXE REdarMe, ChrisMiaW S WFS000523
+Xee, XaCar WFS000200
+Xee, XaCar WFS000200
+CEreira Jr, JEse WFS000456
+CaMaXaWE, CeghaW WFS000153
+HaCiXMEW, DeaWMe DevEW WFS000536
+De Xa Cerda, IgWaciE WFS000318
+.....................................................................................
+
+Employee Name, Employee position who have worked 14 hrs in a single shift
+.....................................................................................
+DeXgadiXXE REdarMe, ChrisMiaW S WFS000523

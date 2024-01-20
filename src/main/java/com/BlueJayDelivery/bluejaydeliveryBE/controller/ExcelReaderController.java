@@ -28,7 +28,11 @@ public class ExcelReaderController {
         List<EmployeeDto> sevenConsecutiveDaysWorkingEmployees = this.excelReaderService.getSevenConsecutiveDaysWorkingEmployees();
 
         if (sevenConsecutiveDaysWorkingEmployees.size() == 0) {
+            System.out.println();
+            System.out.println(".....................................................................................");
             System.out.println("There is no employee who have worked for seven consecutive days.");
+            System.out.println(".....................................................................................");
+            System.out.println();
         } else {
             for (EmployeeDto emp : sevenConsecutiveDaysWorkingEmployees) {
                 System.out.println(emp.getName() + " " + emp.getPosition());
@@ -48,10 +52,13 @@ public class ExcelReaderController {
         } else {
             System.out.println();
             System.out.println("Employee Name, Employee position  who have shift gap greater than 1 and less than 10");
+            System.out.println(".....................................................................................");
             for (EmployeeDto emp : employeesByShiftTimeGap) {
                 System.out.println(emp.getName() + " " + emp.getPosition());
             }
         }
+
+        System.out.println(".....................................................................................");
 
         return new ResponseEntity<>(employeesByShiftTimeGap, HttpStatus.OK);
     }
@@ -66,6 +73,7 @@ public class ExcelReaderController {
         } else {
             System.out.println();
             System.out.println("Employee Name, Employee position who have worked 14 hrs in a single shift");
+            System.out.println(".....................................................................................");
             for (EmployeeDto dto : employeeWorkedFourteenHrInSingleShift) {
                 System.out.println(dto.getName() + " " + dto.getPosition());
             }
